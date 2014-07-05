@@ -1,0 +1,200 @@
+/* Space out content a bit */
+html {
+  height: 100%;
+}
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+/*  background-color: #90c4e4;*/
+  background: linear-gradient(to bottom, rgba(144,196,228,1) 0%,rgba(144,196,228,0.25) 100%);
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+/*  border-bottom: 1px solid #e5e5e5;*/
+  margin-top: 2.75em;
+  padding: auto;
+/*  width: 50%;*/
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.row {
+  margin-top: 1em;
+}
+
+.btn.btn-default.dropdown-toggle {
+  width: 100%;
+  text-align: left;
+}
+
+li {
+  text-align: left;
+}
+
+.dropdown-menu {
+  width: 94%;
+/*  text-align: center;*/
+/*  left: 1.05em;*/
+  margin: 0 15px;
+}
+
+.btn-group {
+  width: 75%%;
+}
+
+p {
+margin: 0 0;
+}
+
+.jumbotron p {
+  margin: 0;
+}
+
+/*.btn {
+  background-color: #D9EBFD;
+}
+
+.form-control {
+  background-color: #D9EBFD;
+}
+
+.btn:hover, .btn:active, .btn:focus, .btn-default:hover, .btn-default:active, .btn-default:focus, .open .dropdown-toggle.btn-default
+{
+  background-color: #B7DAF5;
+}*/
+
+.btn-info, .btn-danger, .btn-success {
+  background-color: #4E8CBA;
+  border-color: #31689B;
+}
+
+.btn-info.active, .btn-danger.active, .btn-success.active, .btn-info:hover, .btn-danger:hover, .btn-success:hover {
+  background-color: #D9EBFD;
+  color: black;
+  border-color: #ABE4CA;
+}
+
+h1, h4 {
+  color: white;
+}
+
+h4 {
+  float: left;
+  /* margin-left: 2%; */
+  line-height: 12px;
+  text-align: right;
+  width: 15%;
+}
+
+.container {
+/*  background: linear-gradient(to top, rgba(49,104,155,1) 0%,rgba(49,104,155,0.25) 100%);*/
+  background-color: rgba(49,104,155,0.25);
+/*    width: 50%;*/
+    border-radius: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: #4E8CBA;
+    color: white;
+    width: 68%;
+    margin: 1em auto;
+}
+
+.col-md-6 {
+  width: 70%;
+  margin: auto;
+  float: none;
+}
+
+/*.delete {
+  background-color: #FD7F76;
+  border-color: #e45850;
+}
+
+.delete:hover, .delete.active, .delete:focus{
+  background-color: #FD9A93;
+  border-color: #FD7F76;
+}*/
+
+.delLink {
+  float: right;
+  margin: 6% -13% 0 0;
+  color: black;
+}
+
+.delLink:hover{
+  color: #545555;
+  text-decoration: none;
+  cursor: pointer;
+}

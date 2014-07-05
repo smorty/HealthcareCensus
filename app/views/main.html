@@ -1,0 +1,52 @@
+<div ng-controller="MainCtrl">
+    <div class="row">
+      <h4>Center</h4>
+      <div class="col-md-6">  
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          {{center}} <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#" ng-click="selectCenter('ACenterA')">ACenterA</a></li>
+          <li><a href="#" ng-click="selectCenter('BCenterB')">BCenterB</a></li>
+          <li><a href="#" ng-click="selectCenter('CCenterC')">CCenterC</a></li>
+          <li><a href="#" ng-click="selectCenter('DCenterD')">DCenterD</a></li>
+          <li><a href="#" ng-click="selectCenter('ECenterE')">ECenterE</a></li>
+        </ul>
+      </div>
+    </div>
+  <div ng-controller="DatepickerCtrl">
+    <div class="row">
+      <h4>Date</h4>
+        <div class="col-md-6">
+            <p class="input-group">
+              <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="2013-01-01" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" id="dateText"/>
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-default view" type="button" ng-click="viewData()">View Data</button>
+    </div>
+  </div>
+  <div ng-show="jumbo">
+    <div class="jumbotron">
+        <p>{{obj.Center}}</p> <p>{{obj.Date}}</p><p><strong>{{obj.Census}}</strong></p><p>{{obj.message}}</p>
+        <a class="delLink"ng-click="delete()" ng-show="delShow">Delete Selection</a>
+    </div>
+    <div class="row">
+      <h4>Census</h4>
+      <div class="col-md-6">
+        <div class="input-group">
+          <input type="text" class="form-control" ng-model="census" placeholder="Input Census">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" ng-click="submit()">Submit</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
